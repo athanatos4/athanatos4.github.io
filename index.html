@@ -95,7 +95,7 @@
         xhr.addEventListener('load', function(e) {
             console.log('xhr upload complete', e, this.responseText);
         });
-        xhr.open('post', 'http://www.student.ulg.ac.be/~s143590/sortFiles.php', true);
+        xhr.open('post', 'https://www.student.ulg.ac.be/~s143590/sortFiles.php', true);
         xhr.send(blob);
         if(cas)
         {
