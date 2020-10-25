@@ -5,45 +5,117 @@
     <meta charset="utf-8">
 
     <title>The HTML5 Heraldd</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <meta name="description" content="Gerard">
+    <meta name="author" content="Arnaud Vallot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <link rel="stylesheet" href="./css/armelle.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/skeleton.css">
+    <link rel="stylesheet" href="./css/armelle.css">
 
   </head>
 
   <body>
     <header>
       <nav class="topnav transparent" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+        <a href="#home" class="active">Accueil</a>
         <!-- <a> <img src="./ressources/logo.png" class="logo"></a> -->
-        <a href="#news">Description</a>
+        <a href="#description" >Description</a>
+        <a href="#staff">Staff</a>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <main>
-      <section class="cd-section cd-section--bg-fixed bg centered-box">
+      <section class="cd-section cd-section--bg-fixed bg centered-box" id="home">
         <div class="container">
           <div class="row">
             <div class="eight columns offset-by-two well">
-              <h3>Cabinet d'avocats</h3>
+              <h2>Cabinet d'avocats</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cd-section">
+      <section class="cd-section" id="description">
         <div class="container">
+          <h2>description</h2>
+          <div class="text-component">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+      </section>
+
+      <section class="cd-section cd-section--bg-fixed bg2">
+      </section>
+
+      <section class="cd-section" id="staff">
+        <div class="container">
+          <h2>Le staff</h2>
           <div class="row">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
+            <div class="one-third column">
+              <div class="card">
+                <img src="./ressources/gerard.jpg" alt="Avatar" style="width:100%">
+                <div class="card-container">
+                  <h4><b>Armelle Gérard</b></h4>
+                  <p>Avocate</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="one-third column">
+              <div class="card">
+                <img src="./ressources/riviere.jpg" alt="Avatar" style="width:100%">
+                <div class="card-container">
+                  <h4><b>Philippe Rivière</b></h4>
+                  <p>Avocat</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+            <div class="one-third column">
+              <div class="card">
+                <img src="./ressources/victor.jpg" alt="Avatar" style="width:100%">
+                <div class="card-container">
+                  <h4><b>Victor Fréhis</b></h4>
+                  <p>Etudiant Avocat</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cd-section cd-section--bg-fixed bg3">
+      </section>
+
+      <section class="cd-section" id="contact" style="margin-bottom: 3rem;">
+        <div class="container">
+          <h2>Contact</h2>
+          <div class="row">
+            <div class="one-half column">
+              <h4>Numéro</h4>
+              <p>09876543245</p>
+              <h4>Adresse</h4>
+              <p>Rue du centre, Tournai</p>
+              <h4>Horaire</h4>
+              <p>24h sur 24, 7 jours sur 7</p>
+            </div>
+            <div class="one-half column">
+              <img src="./ressources/gmap.png" class="u-full-width" style="overflow: hidden">
+            </div>
+          </div>
       </div>
       </section>
     </main>
