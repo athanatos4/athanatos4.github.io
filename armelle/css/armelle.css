@@ -24,11 +24,6 @@ h2 {
 
   /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .bg2 {
@@ -69,7 +64,7 @@ h2 {
 
 .logo {
 	width: auto;
-	max-height: : 10%;
+	max-height: 10%;
 	/* object-fit: contain; */
 	/* position: relative; */
 	background-color: #ffffff;
@@ -98,6 +93,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment:scroll
 }
 
 .cd-section--bg-fixed {
